@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Open+Sans:wght@400;500;600&family=Poppins:wght@500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "DM Sans", sans-serif;
+        /* font-family: "Open Sans", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Roboto", sans-serif; */
+      }
+
+      .form-header__title {
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+
+      .color {
+        background-color: #6c757d;
+        border: none;
+      }
+
+      .color__blue {
+        background-color: #6366F1;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card mt-5">
+        <div class="form-header p-2 px-3">
+          <h3 class="form-header__title card-title mt-2">
+            Create a Sales Report
+          </h3>
+          <!-- <a href="" class="btn btn-dark router-link-active float-right">
+            <i class="fa-solid fa-left-long"></i>
+            Back
+          </a> -->
+        </div>
+        <hr class="m-0 p-0" />
+
+          <div class="card-body">
+            <form class="row g-3">
+              <!-- <div class="card-body"> -->
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label fw-medium"
+                  >Employee Name</label
+                >
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Enter a Employee Name" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputState" class="form-label fw-medium">Customer details</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Existing</option>
+                  <option>New</option>
+                </select>
+              </div>
+    
+              <h3 class="form-header__title card-title my-3 fs-4">
+                Create a New Customer
+              </h3>
+    
+              <div class="col-md-4">
+                <label for="inputAddress" class="form-label fw-medium">Company name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder="Enter a Company Name"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="inputCity" class="form-label fw-medium">Customer name</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Enter a Customer Name" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputCity" class="form-label fw-medium">Address</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Enter a Address" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputZip" class="form-label fw-medium">City</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="Enter a City"  />
+              </div>
+              <div class="col-md-4">
+                <label for="inputZip" class="form-label fw-medium">State</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="Enter a State" />
+              </div>
+              <div class="col-md-4">
+                <label for="inputZip" class="form-label fw-medium">Zip</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="Enter a Zip" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputZip" class="form-label fw-medium">Requirement</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  cols="6"
+                ></textarea>
+              </div>
+              <div class="col-md-6 d-flex">
+                <div>
+                  <label for="inputZip" class="form-label fw-medium">Company Image</label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    name="upload"
+                    id="inputZip"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 d-flex">
+                <div>
+                  <label for="inputZip" class="form-label fw-medium"
+                    >Employee Signature</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    name="upload"
+                    id="inputZip"
+                  />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <label for="inputZip" class="form-label fw-medium">Note</label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    cols="6"
+                  ></textarea>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label fw-medium">Status</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Active</option>
+                    <option>InActive</option>
+                  </select>
+                </div>
+              </div>
+          </div>
+          <div class="card-footer">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary color">Sign in</button>
+              <button type="submit" class="btn btn-primary float-md-end color__blue">
+                Sign in
+              </button>
+            </div>
+          </div>
+          <!-- </div> -->
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
